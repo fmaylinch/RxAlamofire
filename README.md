@@ -4,7 +4,13 @@ This is a fork of [RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire/
 
 I have added a hack to return a `DataResponseError` on error, so it's possible to get the `DataResponse` when an error occurs.
 
-For example:
+## Install pod
+
+```
+pod 'RxAlamofire', :git => 'https://github.com/fmaylinch/RxAlamofire.git', :tag => '4.2.0-DataResponseError'
+```
+
+## Example
 
 ```swift
 RxAlamofire.data(method, url).subscribe(
